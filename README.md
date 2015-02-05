@@ -1,2 +1,2 @@
 # QVGP
-Qui veux gagnez des pluggins.
+Qui veux gagner des plugins.
