@@ -1,0 +1,4 @@
+type=chargeurquestion
+pluginsNames=chargeurquestion
+pluginClass=chargeurQuestion
+firstLoad=no

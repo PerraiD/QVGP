@@ -1,0 +1,5 @@
+type=ui
+pluginsNames=ui
+pluginClass=Ui
+firstLoad=yes
+dependancy=cool

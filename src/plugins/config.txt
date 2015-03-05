@@ -1,0 +1,4 @@
+class=theme
+name=informatique
+name=sport
+name=voiture
