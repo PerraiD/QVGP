@@ -1,5 +1,4 @@
 type=ui
 pluginsNames=ui
-pluginClass=Ui
+pluginClass=beginGUI
 firstLoad=yes
-dependancy=cool

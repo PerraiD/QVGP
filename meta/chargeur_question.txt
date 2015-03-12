@@ -1,4 +1,4 @@
-type=chargeurquestion
-pluginsNames=chargeurquestion
-pluginClass=chargeurQuestion
+type=producteurquestion
+pluginsNames=producteurquestion
+pluginClass=Pq
 firstLoad=no

@@ -68,7 +68,7 @@ public void loadConfig() throws FileNotFoundException, IOException, ClassNotFoun
 		for(String k: p.stringPropertyNames()){
 			
 			if(k.equals("type")){
-				System.out.println(p.getProperty(k));
+				//System.out.println(p.getProperty(k));
 				mp.setType(p.getProperty(k));
 			}else{
 				mp.addParams(k, p.getProperty(k));
@@ -103,8 +103,8 @@ public File[] getMetaPluginsFiles(){
 			System.out.println("Le chemin '"+metaFiles+"' correspond à un fichier et non à un répertoire");
 		}else{
 			subfiles = directory.listFiles();
-			String message = "Le répertoire '"+metaFiles+"' contient "+ subfiles.length+" fichier"+(subfiles.length>1?"s":"");
-			System.out.println(message);
+//			String message = "Le répertoire '"+metaFiles+"' contient "+ subfiles.length+" fichier"+(subfiles.length>1?"s":"");
+//			System.out.println(message);
 	
 		}
 
@@ -133,17 +133,12 @@ public Object loadObject(MetaPlugin mplug) throws FileNotFoundException, IOExcep
 		URL[] plugUrl = new URL[]{new URL("file://"+System.getProperty("user.dir")+"/bin/")};
 		URLClassLoader urlC = new URLClassLoader(plugUrl);
 		
-		for(URL u:urlC.getURLs()){
-			System.out.println(u.getPath());
-		}
 		
 		//charger la classe correspondante au type de pluggin
 		// le type du plugins correspond a sa classe a charger.
 		Class<?> cl = urlC.loadClass("plugins."+mplug.getProperty("pluginClass"));
 	
 		Object o = cl.newInstance();
-		
-		System.out.println(cl.getName());
 		
 		
 		return o;
@@ -165,7 +160,6 @@ public ArrayList<MetaPlugin> getSpecificPlugin(String type){
 		if(mp.getType().equals(type)){
 			lplug.add(mp);
 		}
-		
 		
 	}
 	
