@@ -1,33 +1,61 @@
 package plugins;
 
-import java.util.ArrayList;
+import java.util.List;
 
-public class Question {
-	public String question;
-	public ArrayList<String> reponses;
+import Core.IQuestion;
+
+public class Question implements IQuestion{
+
+	private String theme;
+	private int numero;
+	private String enonce;
+	private List<String> reponses;
 	
-	public Question(String question, ArrayList<String> reponses) {
+	public Question(String theme, int numero, String enonce, List<String> reponses) {
 		super();
-		this.question = question;
+		this.theme = theme;
+		this.numero = numero;
+		this.enonce = enonce;
 		this.reponses = reponses;
 	}
-
-	public String getQuestion() {
-		return question;
+	
+	public String getTheme() {
+		return theme;
+	}
+	
+	public void setTheme(String theme) {
+		this.theme = theme;
 	}
 
-	public void setQuestion(String question) {
-		this.question = question;
+	public int getNumero() {
+		return numero;
 	}
 
-	public ArrayList<String> getReponses() {
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public String getEnonce() {
+		return enonce;
+	}
+	
+	public void setEnonce(String enonce) {
+		this.enonce = enonce;
+	}
+	
+	public List<String> getReponses() {
 		return reponses;
 	}
-
-	public void setReponses(ArrayList<String> reponses) {
+	
+	public void setReponses(List<String> reponses) {
 		this.reponses = reponses;
 	}
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "Question [theme=" + theme + ", numero=" + numero + ", enonce="
+				+ enonce + ", reponses=" + reponses + "]";
+	}
+
+
 }

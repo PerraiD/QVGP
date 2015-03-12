@@ -12,6 +12,8 @@ import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
@@ -20,9 +22,11 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import Core.IGui;
+import Core.IProducteurDeQuestion;
 import Core.Loader;
 
-public class Gui extends JFrame{
+public class Gui extends JFrame  implements IGui{ 
 	
   private Panneau pan = new Panneau();
   JButton bouton = new JButton("Fichier");
@@ -35,15 +39,19 @@ public class Gui extends JFrame{
  private TextArea texte1= new TextArea("Tapez votre premier texte ici",1,1,java.awt.TextArea.SCROLLBARS_NONE);
  
  //producteur de question
- private Pq  prod_question;
+
  
  
   public Gui() throws FileNotFoundException, ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException, IOException{	  
   
-	  prod_question = (Pq) Loader.getInstance().loadObject(Loader.getInstance().getSpecificPlugin("producteurquestion").get(0));
-	  System.out.println(prod_question.toString());
+	 IProducteurDeQuestion prod_question = (IProducteurDeQuestion) Loader.getInstance().loadObject(Loader.getInstance().getSpecificPlugin("producteurquestion").get(0));
 	  
-	  //prod_question.get
+	 List<String> themes= new ArrayList<String>();
+	 themes= prod_question.getThemes();
+	 
+	 for(String theme: themes){
+		 System.out.println(theme);
+	 }
 	 	  
     this.setTitle("Qui Veut Gagner Des Plugins");
     this.setSize(600, 600);
