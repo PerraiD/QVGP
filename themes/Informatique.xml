@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme nom="Informatique">
+<question>
+   <enonce>
+      <nom>En quelle année est né Internet?</nom>
+   </enonce>
+   <reponse>
+      <nom>1989</nom>
+   </reponse>
+   <reponse>
+      <nom>1990</nom>
+   </reponse>
+   <reponse>
+      <nom>1998</nom>
+   </reponse>
+   <reponse>
+      <nom>1789</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Combien d'octet sont compris dans un TeraOctet ?</nom>
+   </enonce>
+   <reponse>
+      <nom>10000</nom>
+   </reponse>
+   <reponse>
+      <nom>1024</nom>
+   </reponse>
+   <reponse>
+      <nom>800</nom>
+   </reponse>
+   <reponse>
+      <nom>8</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Qui était Steve Jobs ?</nom>
+   </enonce>
+   <reponse>
+      <nom>Un des fondateur d'Apple</nom>
+   </reponse>
+   <reponse>
+      <nom>Le designer de dernière souris logitech</nom>
+   </reponse>
+   <reponse>
+      <nom>L'inventeur du site de pôle emploi</nom>
+   </reponse>
+   <reponse>
+      <nom>Un cycliste</nom>
+   </reponse>
+</question>
+</theme>

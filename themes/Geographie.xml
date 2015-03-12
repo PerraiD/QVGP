@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme nom="Géographie">
+<question>
+   <enonce>
+      <nom>Quelle est la capitale de L'Allemagne?</nom>
+   </enonce>
+   <reponse>
+      <nom>Berlin</nom>
+   </reponse>
+   <reponse>
+      <nom>Dublin</nom>
+   </reponse>
+   <reponse>
+      <nom>Washington</nom>
+   </reponse>
+   <reponse>
+      <nom>Issy-Les-Moulineaux</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Quelle est la capitale de la Chine?</nom>
+   </enonce>
+   <reponse>
+      <nom>Pékin</nom>
+   </reponse>
+   <reponse>
+      <nom>Shangai</nom>
+   </reponse>
+   <reponse>
+      <nom>Kingtown</nom>
+   </reponse>
+   <reponse>
+      <nom>Buenos-Aires</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Où se trouve le tajmahal?</nom>
+   </enonce>
+   <reponse>
+      <nom>Inde</nom>
+   </reponse>
+   <reponse>
+      <nom>Chine</nom>
+   </reponse>
+   <reponse>
+      <nom>Argentine</nom>
+   </reponse>
+   <reponse>
+      <nom>Rwanda</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Quelle est la spécialité culinaire de la Bretagne?</nom>
+   </enonce>
+   <reponse>
+      <nom>Galettes</nom>
+   </reponse>
+   <reponse>
+      <nom>Mogette</nom>
+   </reponse>
+   <reponse>
+      <nom>Calissons</nom>
+   </reponse>
+   <reponse>
+      <nom>Nougat</nom>
+   </reponse>
+</question>
+</theme>

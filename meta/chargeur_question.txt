@@ -1,4 +1,4 @@
 type=producteurquestion
 pluginsNames=producteurquestion
-pluginClass=Pq
+pluginClass=ProducteurDeQuestion
 firstLoad=no
