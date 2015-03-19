@@ -59,6 +59,11 @@ public class MetaPlugin {
 		public String getProperty(String prop){
 			return this.getParams().get(prop);
 		}
+		
+		
+		public String getName(){
+			return params.get("pluginName");
+		}
 		 
 		public String toString(){
 			

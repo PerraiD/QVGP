@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-import Core.IProducteurDeQuestion;
-import Core.IQuestion;
+import Interfaces.IProducteurDeQuestion;
+import Interfaces.IQuestion;
 
 public class ProducteurDeQuestionParDefaut implements IProducteurDeQuestion {
 	private List<String> themes;

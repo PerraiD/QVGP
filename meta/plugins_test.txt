@@ -1,4 +1,4 @@
-type=ui
-pluginName=ui
+type=nimporte
+pluginName=QVGP
 pluginClass=beginGUI
 firstLoad=yes

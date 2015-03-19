@@ -22,9 +22,11 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import Core.IGui;
-import Core.IProducteurDeQuestion;
+import config.MetaPlugin;
+
 import Core.Loader;
+import Interfaces.IGui;
+import Interfaces.IProducteurDeQuestion;
 
 public class Gui extends JFrame  implements IGui{ 
 	
@@ -48,11 +50,7 @@ public class Gui extends JFrame  implements IGui{
 	  
 	 List<String> themes= new ArrayList<String>();
 	 themes= prod_question.getThemes();
-	 
-	 for(String theme: themes){
-		 System.out.println(theme);
-	 }
-	 	  
+		 	  
     this.setTitle("Qui Veut Gagner Des Plugins");
     this.setSize(600, 600);
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

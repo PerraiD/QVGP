@@ -167,6 +167,23 @@ public ArrayList<MetaPlugin> getSpecificPlugin(String type){
 	
 }
 
+
+public ArrayList<MetaPlugin> getPluginFromName(String name){
+	ArrayList<MetaPlugin> lplug= new ArrayList<MetaPlugin>();
+	
+	for(MetaPlugin mp: this.mPlugins){
+		
+		if(mp.getName().equals(name)){
+			lplug.add(mp);
+		}
+		
+	}
+	
+	return lplug;
+	
+	
+}
+
 public final static Loader getInstance(){
 	if(instance==null){
 		instance = new Loader();

@@ -20,7 +20,6 @@ public class beginGUI extends JFrame implements ActionListener{
 	
 	JButton bouton = new JButton("Commencer !");
 	JButton bouton2 = new JButton("Quitter :(");
-	int variableDavid =1;
 	
  public beginGUI(){
 	 
@@ -51,9 +50,9 @@ public class beginGUI extends JFrame implements ActionListener{
  }  
 	    public void actionPerformed(ActionEvent arg0) {
 	  	  if(arg0.getSource() == bouton){
-	  		// LOAD CHARGEUR PLUGIN AVEC VARIABLE INSTANCE A LA FIN DU CHARGEMENT
+	  		
 	  		  
-	  		  if(variableDavid==1){
+	  		 
 	  		  try {
 				new Gui().setVisible(true);
 				
@@ -91,8 +90,6 @@ public class beginGUI extends JFrame implements ActionListener{
 	  		  }
 	  		  
 	  		  }
-	  	  else System.exit(0);
-	  	  
-	 
- }
-	    }
+	  	 
+	  	 
+}

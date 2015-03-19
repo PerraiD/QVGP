@@ -2,7 +2,7 @@ package plugins;
 
 import java.util.List;
 
-import Core.IQuestion;
+import Interfaces.IQuestion;
 
 public class Question implements IQuestion{
 

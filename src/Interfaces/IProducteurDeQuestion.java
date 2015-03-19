@@ -1,7 +1,8 @@
-package Core;
+package Interfaces;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 import plugins.Theme;
 

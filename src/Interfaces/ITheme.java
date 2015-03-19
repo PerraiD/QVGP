@@ -1,4 +1,4 @@
-package Core;
+package Interfaces;
 
 public interface ITheme {
 	public String getNom();

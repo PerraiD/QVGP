@@ -1,14 +1,14 @@
 package plugins;
 
 import plugins.DirectoryReader;
-import plugins.QuestionParser;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import Core.IProducteurDeQuestion;
-import Core.IQuestion;
+import Core.QuestionParser;
+import Interfaces.IProducteurDeQuestion;
+import Interfaces.IQuestion;
 
 public class ProducteurDeQuestion implements IProducteurDeQuestion {
 	private List<String> themes;

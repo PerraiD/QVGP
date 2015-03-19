@@ -1,4 +1,4 @@
-package plugins;
+package Core;
 
 import java.io.FileNotFoundException;
 
@@ -8,6 +8,9 @@ import java.util.List;
 import java.util.Random;
 
 import org.jdom2.*;
+
+import plugins.Parser;
+import plugins.Question;
 
 
 public class QuestionParser {
