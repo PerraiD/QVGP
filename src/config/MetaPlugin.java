@@ -1,5 +1,6 @@
 package config;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /*
@@ -7,24 +8,44 @@ import java.util.HashMap;
  * 
  * 
  */
-
-
 public class MetaPlugin {
 	 	
 		private  String type;
 		private HashMap<String, String> params;
+		private ArrayList<String> dependencies; 
 		
 		public MetaPlugin(){
 			this.type="";
 			this.params= new HashMap<String,String>();
+			this.dependencies = new ArrayList<String>();
+			
 		}
-		
+			
 		
 		public MetaPlugin(String type,HashMap<String, String> params) {
 			this.type= type;
 			this.params = params;
 		}
 
+		public void loadDependencies(){
+			String depend = this.getProperty("dependencies"); 
+			if(depend != null){
+			  if(depend.contains(",")){
+				  String[] tmpDep= depend.split(",");  
+				  for(String dep:tmpDep){
+						dependencies.add(dep);
+				  }
+			  }else{
+				  dependencies.add(depend);
+				  
+			  }
+			}else{
+				dependencies.add(""); // on ajoute une entrée null pour indiquée qu'il y na pas de dépendances.
+			}
+				
+		}
+		
+		
 		public String getType() {
 			return type;
 		}
@@ -45,9 +66,17 @@ public class MetaPlugin {
 		public void addParams(String key, String value){
 			
 			this.params.put(key, value);
-			
 		}
 		
+		
+		public ArrayList<String> getDependencies() {
+			return dependencies;
+		}
+
+		public void setDependencies(ArrayList<String> dependencies) {
+			this.dependencies = dependencies;
+		}
+
 		public boolean isFirstLoad(){
 			
 			return params.get("firstLoad").equals("yes");

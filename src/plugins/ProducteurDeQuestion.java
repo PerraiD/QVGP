@@ -1,11 +1,11 @@
 package plugins;
 
-import plugins.DirectoryReader;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import Core.DirectoryReader;
 import Core.QuestionParser;
 import Interfaces.IProducteurDeQuestion;
 import Interfaces.IQuestion;
@@ -31,7 +31,18 @@ public class ProducteurDeQuestion implements IProducteurDeQuestion {
 		this.themes = themes;
 	}
 	
-	public ArrayList<IQuestion> recupererQuestions(){
+	public ArrayList<IQuestion> recupererQuestions(String theme) throws FileNotFoundException{
+		listeDesQuestions.removeAll(listeDesQuestions);
+		QuestionParser qp=new QuestionParser(System.getProperty("user.dir")+"/themes/"+theme+".xml");
+		int nbquest=qp.getNbquestion();
+		List<Integer> numeros = new ArrayList<Integer>();
+		do{ Question q=qp.chercheQuestion();
+		if(!numeros.contains(q.getNumero())){ numeros.add(q.getNumero());
+		listeDesQuestions.add(q);
+		} 
+		}
+		while(numeros.size()!=nbquest);
 		return listeDesQuestions;
-	}
+		}
+
 }

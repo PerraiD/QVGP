@@ -1,0 +1,5 @@
+type=ui
+pluginName=StartUi
+pluginClass=BeginGUI
+firstLoad=yes
+dependencies=OptionGui

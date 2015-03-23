@@ -1,4 +1,0 @@
-type=nimporte
-pluginName=QVGP
-pluginClass=beginGUI
-firstLoad=yes

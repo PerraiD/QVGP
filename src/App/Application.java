@@ -25,7 +25,7 @@ public class Application{
 	public static void main(String[] args) throws FileNotFoundException, ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException, IOException {
 			
 	
-		Loader loader = Loader.getInstance();
+		Plateforme loader = Plateforme.getInstance();
 		loader.loadConfig();
 		
 	}

@@ -21,7 +21,7 @@ public class ProducteurDeQuestionParDefaut implements IProducteurDeQuestion {
 		listeDesQuestions.add(q1);
 	}
 	
-	public ArrayList<IQuestion> recupererQuestions(){
+	public ArrayList<IQuestion> recupererQuestions(String theme){
 		return listeDesQuestions;
 	}
 
