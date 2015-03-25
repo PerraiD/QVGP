@@ -2,4 +2,4 @@ type=ui
 pluginName=Gui
 pluginClass=Gui
 firstLoad=no
-dependencies=ProducteurDeQuestion,QuestionGUI
+dependencies=ProducteurDeQuestion,QuestionGUI,CalculPoint
