@@ -1,6 +1,5 @@
 package plugins;
 
-import java.awt.Color;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -10,13 +9,10 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
-import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 
@@ -29,7 +25,7 @@ public class OptionGui extends JFrame implements IGui,ActionListener{
 	JRadioButton joker = new JRadioButton("Jouer avec des jokers");
 	JButton boutonGo = new JButton("Démarrer");
 	List<String> choixthemes = new ArrayList<String>(); 
-	JComboBox theme;
+	JComboBox<?> theme;
 	
  public OptionGui() throws FileNotFoundException, ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException, IOException{
 	 

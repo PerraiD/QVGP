@@ -1,20 +1,18 @@
 package plugins;
 
-import java.awt.Color;
+
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
 import java.lang.reflect.InvocationTargetException;
+
 import java.net.MalformedURLException;
-import java.util.ArrayList;
+
 import java.util.Collections;
 import java.util.List;
 
-import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
-import javax.swing.JButton;
-import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 

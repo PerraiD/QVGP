@@ -2,24 +2,20 @@ package Core;
 
 import java.util.ArrayList;
 
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.Map;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.Properties;
 import java.io.File;
 import config.MetaPlugin;
-import plugins.*;
-import Interfaces.*;
+
 
 public class Plateforme{
 	
@@ -197,7 +193,7 @@ public Object loadPluginDependencyWithParamsFrom(Class<?> targetClass,String plu
 		Class<?> pluginClass = urlC.loadClass("plugins."+dep);
 
 		if(interfClass.isAssignableFrom(pluginClass)){
-			Constructor pluginConstr = pluginClass.getConstructor(param);
+			Constructor<?> pluginConstr = pluginClass.getConstructor(param);
 			
 			plugToLoad = pluginConstr.newInstance(values);  
 	   }

@@ -1,18 +1,16 @@
 package plugins;
 
-import java.awt.BorderLayout;
-import java.awt.CardLayout;
+
 import java.awt.Color;
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.Font;
 import java.awt.GridLayout;
-import java.awt.TextArea;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
+
 import java.lang.reflect.InvocationTargetException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,7 +21,6 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
 
 import Core.*;
 import Interfaces.*;
