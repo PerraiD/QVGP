@@ -52,7 +52,7 @@ public class Gui extends JFrame  implements IGui, ActionListener{
     IProducteurDeQuestion prod_question = (IProducteurDeQuestion) plateformeInstance.loadPluginDependencyFrom(this.getClass(), "IProducteurDeQuestion");
     
    questions=  prod_question.recupererQuestions(themeChoisi);
-    calcPts= (ICalculPoint) plateformeInstance.loadPluginDependencyFrom(this.getClass(), "ICalculPoint");
+   calcPts= (ICalculPoint) plateformeInstance.loadPluginDependencyFrom(this.getClass(), "ICalculPoint");
    Object[] question = {questions.get(indiceQC),calcPts};
    qGui = (QuestionGUI) plateformeInstance.loadPluginDependencyWithParamsFrom(this.getClass(),"IGui",question,IQuestion.class,ICalculPoint.class); 
    indiceQC++;

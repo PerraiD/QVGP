@@ -3,7 +3,7 @@ package plugins;
 import Interfaces.ICalculPoint;
 
 public class CalculPoint implements ICalculPoint {
-	private int score;
+	protected int score;
 	public CalculPoint(){
 		score=0;
 	}

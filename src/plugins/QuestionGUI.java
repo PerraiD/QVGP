@@ -35,10 +35,10 @@ public class QuestionGUI extends JPanel implements IGui,ActionListener{
 	Plateforme plateformeInstance;
 	
 	public QuestionGUI (IQuestion question, ICalculPoint points) throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException, MalformedURLException{
-		revelateur = new Revelateur(question);
-		//plateformeInstance = Plateforme.getInstance();
-		//Object[] q = {question};
-		//revelateur = (IRevelateur) plateformeInstance.loadPluginDependencyWithParamsFrom(this.getClass(),"IRevelateur",q,IQuestion.class); 
+		//revelateur = new Revelateur(question);
+		plateformeInstance = Plateforme.getInstance();
+		Object[] q = {question};
+		revelateur = (IRevelateur) plateformeInstance.loadPluginDependencyWithParamsFrom(this.getClass(),"IRevelateur",q,IQuestion.class); 
 		
 		this.points = points;
 		this.question = question.getEnonce();

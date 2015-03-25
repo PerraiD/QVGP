@@ -184,7 +184,7 @@ public Object loadPluginDependencyWithParamsFrom(Class<?> targetClass,String plu
 	
 	Object plugToLoad=null;
 	MetaPlugin tmpPlug = this.getPluginFromClassName(targetClass.getName());
-	
+
 	System.out.println(tmpPlug.getDependencies().get(0));
 	
 	for(String dep : tmpPlug.getDependencies()){
@@ -253,7 +253,7 @@ public MetaPlugin getPluginFromClassName(String className){
 	 
 	// présence en préfix du package de la classe on récupère juste le nom de la classe
 	if(className.contains(".")){
-		//System.out.println(className);
+		System.out.println(className);
 		String[] tmpS = className.split("\\.");
 		className= tmpS[1];
 	}
@@ -265,7 +265,7 @@ public MetaPlugin getPluginFromClassName(String className){
 		}
 		
 	}
-	
+
 	return mPlug;
 	
 }

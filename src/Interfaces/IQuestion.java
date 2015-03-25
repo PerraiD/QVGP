@@ -6,3 +6,5 @@ public interface IQuestion{
 	public String getEnonce();
 	public List<String> getReponses();
 }
+
+

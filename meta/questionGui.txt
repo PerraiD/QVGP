@@ -1,5 +1,5 @@
 type=ui
 pluginName=questionGui
-pluginClass=QuestionGui
+pluginClass=QuestionGUI
 firstLoad=no
-dependencies=Gui
+dependencies=Revelateur
