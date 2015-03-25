@@ -43,7 +43,7 @@ public final static Plateforme getInstance() throws MalformedURLException{
 	if(instance==null){
 		instance = new Plateforme();
 	}
-	
+		
 	return instance;
 	
 }
@@ -166,7 +166,6 @@ public Object loadPluginDependencyFrom(Class<?> targetClass, String pluginInterf
 	Object plugToLoad=null;
 	MetaPlugin tmpPlug = this.getPluginFromClassName(targetClass.getName());
 	
-	System.out.println(tmpPlug.getDependencies().get(0));
 	
 	for(String dep : tmpPlug.getDependencies()){
 		
