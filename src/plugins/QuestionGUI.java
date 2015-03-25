@@ -4,6 +4,8 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.lang.reflect.InvocationTargetException;
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -16,21 +18,31 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 
+import Core.Plateforme;
 import Interfaces.*;
-import sun.security.util.Length;
+//import sun.security.util.Length;
 
 public class QuestionGUI extends JPanel implements IGui,ActionListener{
-	JRadioButton bouton1;
 	String question = "";
 	ButtonGroup RepGroup = new ButtonGroup();
+	JRadioButton bouton1;
 	JRadioButton bouton2 ;
 	JRadioButton bouton3 ;
 	JRadioButton bouton4 ;
 	String moitquest1;
 	String moitquest2;
 	String moitquest3;
+	IRevelateur revelateur;
+	ICalculPoint points;
+	Plateforme plateformeInstance;
 	
-	public QuestionGUI (IQuestion question){
+	public QuestionGUI (IQuestion question, ICalculPoint points) throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException, MalformedURLException{
+		revelateur = new Revelateur(question);
+		//plateformeInstance = Plateforme.getInstance();
+		//Object[] q = {question};
+		//revelateur = (IRevelateur) plateformeInstance.loadPluginDependencyWithParamsFrom(this.getClass(),"IRevelateur",q,IQuestion.class); 
+		
+		this.points = points;
 		this.question = question.getEnonce();
 		List<String> reps = question.getReponses();
 		Collections.shuffle(reps);
@@ -43,7 +55,7 @@ public class QuestionGUI extends JPanel implements IGui,ActionListener{
 		RepGroup.add(bouton2);
 		RepGroup.add(bouton3);
 		RepGroup.add(bouton4);
-		bouton4.setBackground(Color.red);
+		
 	}
 	public void paintComponent(Graphics g){
 		bouton1.setSelected(true);
@@ -65,10 +77,10 @@ public class QuestionGUI extends JPanel implements IGui,ActionListener{
 			g.drawString(moitquest1,10, 40);
 			g.drawString(moitquest2,0, 50);
 			g.drawString(moitquest3,0, 60);
-			}
+		}
 		else g.drawString(question,0, 40);
 		
-		    }
+	}
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		// TODO Auto-generated method stub
@@ -76,6 +88,19 @@ public class QuestionGUI extends JPanel implements IGui,ActionListener{
 			
 		}
 	} 
+	
+	public void verifierReponse(){
+		verifRepByButton(bouton1);
+		verifRepByButton(bouton2); 
+		verifRepByButton(bouton3); 
+		verifRepByButton(bouton4);
+	}
+	
+	public void verifRepByButton(JRadioButton b){
+		if(b.isSelected()){
+			points.isGoodAnswer(revelateur.estReponseCorrecte(b.getText()));
+		}
+	}
 		    
-	  }               
+}               
 

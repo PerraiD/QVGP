@@ -1,0 +1,4 @@
+type=verificateur
+pluginName=revelateur
+pluginClass=Revelateur
+firstLoad=no

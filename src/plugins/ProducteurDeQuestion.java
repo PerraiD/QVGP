@@ -37,12 +37,13 @@ public class ProducteurDeQuestion implements IProducteurDeQuestion {
 		int nbquest=qp.getNbquestion();
 		List<Integer> numeros = new ArrayList<Integer>();
 		do{ Question q=qp.chercheQuestion();
-		if(!numeros.contains(q.getNumero())){ numeros.add(q.getNumero());
-		listeDesQuestions.add(q);
-		} 
+			if(!numeros.contains(q.getNumero())){ 
+				numeros.add(q.getNumero());
+				listeDesQuestions.add(q);
+			} 
 		}
 		while(numeros.size()!=nbquest);
 		return listeDesQuestions;
-		}
+	}
 
 }
