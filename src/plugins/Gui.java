@@ -22,7 +22,8 @@ import Interfaces.*;
 
 public class Gui extends JFrame  implements IGui, ActionListener{ 
   
-	JButton boutonGo = new JButton("Valider");
+	JButton boutonValider = new JButton("Valider");
+	JButton boutonSuivant = new JButton("Suivant");
 	JComboBox<?> theme;
 	JPanel Points = new JPanel();
 	JPanel Question = new JPanel();
@@ -34,7 +35,7 @@ public class Gui extends JFrame  implements IGui, ActionListener{
 	
 	private List<IQuestion> questions = new ArrayList<IQuestion>();
 	int indiceQC;
-	
+	boolean isValidate=false;
 	Plateforme plateformeInstance;
 	IProducteurDeQuestion prod_question;
 	ICalculPoint calcPts;
@@ -59,12 +60,12 @@ public class Gui extends JFrame  implements IGui, ActionListener{
 	    this.setLocationRelativeTo(null);
 	    //Ajout du bouton à notre content pane
 	
-	    boutonGo.addActionListener(this);
-	
-	    GridLayout experimentLayout = new GridLayout(0,2);
+	    boutonValider.addActionListener(this);
+	    boutonSuivant.addActionListener(this);
 	    
+	    GridLayout experimentLayout = new GridLayout(0,2);
 
-	    Points.setLayout(new BoxLayout(Points, BoxLayout.PAGE_AXIS));
+	    Points.setLayout(new BoxLayout(Points, BoxLayout.LINE_AXIS));
 	    Points.setAlignmentX(JPanel.LEFT_ALIGNMENT);
 	    points.setText("Points : "+calcPts.getScore());
 	    Points.add(points);
@@ -85,7 +86,8 @@ public class Gui extends JFrame  implements IGui, ActionListener{
 	
 	    BoutonGo.setLayout(new BoxLayout(BoutonGo, BoxLayout.LINE_AXIS));
 	    BoutonGo.setAlignmentX(JPanel.LEFT_ALIGNMENT);
-	    BoutonGo.add(boutonGo);
+	    BoutonGo.add(boutonValider);
+	    BoutonGo.add(boutonSuivant);
 	    
 	    //On positionne maintenant ces trois lignes en colonne
 	    b6.setLayout(new BoxLayout(b6, BoxLayout.PAGE_AXIS));
@@ -104,15 +106,13 @@ public class Gui extends JFrame  implements IGui, ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 	
-	    if(arg0.getSource() == boutonGo){
-	    	
+	    if((arg0.getSource() == boutonValider) && (qGui.asAValidateQuestion())&&!isValidate){
+	    	isValidate=true;
 	    	qGui.verifierReponse();
-	
-	    	try {
-	    		Thread.sleep(1000);
-	    	} catch (InterruptedException e) {
-	    		e.printStackTrace();
-	    	}
+	    	updateQuestionUI();
+	    }
+	    else if((arg0.getSource() == boutonSuivant) && (isValidate)){
+	    	update(this.getGraphics());
 	    	
 	    	if(indiceQC < questions.size()){
 	    		
@@ -132,14 +132,6 @@ public class Gui extends JFrame  implements IGui, ActionListener{
 	    	}else{
 	    		updateQuestionUI();
 	    		
-	    		try {
-		    		Thread.sleep(1000);
-		    	} catch (InterruptedException e) {
-		    		e.printStackTrace();
-		    	}
-	    		//Fin de partie
-	    		//EndGUI eGui=new EndGUI(calcPts.getScore());
-	    		
 	    		Object[] pts = {calcPts.getScore()};
 	    		try {
 					EndGUI eGui = (EndGUI) plateformeInstance.loadPluginDependencyWithParamsFrom(this.getClass(),"IGui",pts,int.class);
@@ -152,6 +144,7 @@ public class Gui extends JFrame  implements IGui, ActionListener{
 				}
 	    		this.dispose();
 	    	}
+	    	isValidate=false;
 	    }
 	}
 

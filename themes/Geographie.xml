@@ -68,4 +68,106 @@
       <nom>Nougat</nom>
    </reponse>
 </question>
+<question>
+   <enonce>
+      <nom>Lequel de ces pays d'Amérique du Sud a pour langue officielle le portugais ?</nom>
+   </enonce>
+   <reponse>
+      <nom>Brésil</nom>
+   </reponse>
+   <reponse>
+      <nom>Colombie</nom>
+   </reponse>
+   <reponse>
+      <nom>Vénézuela</nom>
+   </reponse>
+   <reponse>
+      <nom>Uruguay</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Combien y a-t-il d'États aux États-Unis ?</nom>
+   </enonce>
+   <reponse>
+      <nom>51</nom>
+   </reponse>
+   <reponse>
+      <nom>50</nom>
+   </reponse>
+   <reponse>
+      <nom>55</nom>
+   </reponse>
+   <reponse>
+      <nom>48</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Quel est le plus long fleuve de France ?</nom>
+   </enonce>
+   <reponse>
+      <nom>La Loire</nom>
+   </reponse>
+   <reponse>
+      <nom>Le Rhône</nom>
+   </reponse>
+   <reponse>
+      <nom>La Garonne</nom>
+   </reponse>
+   <reponse>
+      <nom>La Seine</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Dans quel pays trouvait-on la République helvétique ?</nom>
+   </enonce>
+   <reponse>
+      <nom>La Suisse</nom>
+   </reponse>
+   <reponse>
+      <nom>L'Italie</nom>
+   </reponse>
+   <reponse>
+      <nom>Le Luxembourg</nom>
+   </reponse>
+   <reponse>
+      <nom>La Belgique</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Dans quel pays la ville d'Hambourg se situe-t-elle ?</nom>
+   </enonce>
+   <reponse>
+      <nom>Allemagne</nom>
+   </reponse>
+   <reponse>
+      <nom>Luxembourg</nom>
+   </reponse>
+   <reponse>
+      <nom>Pays-Bas</nom>
+   </reponse>
+   <reponse>
+      <nom>France</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Parmi les pays suivants, lequel ne possède pas de frontière avec le Liban ?</nom>
+   </enonce>
+   <reponse>
+      <nom>La Syrie</nom>
+   </reponse>
+   <reponse>
+      <nom>Israël</nom>
+   </reponse>
+   <reponse>
+      <nom>L'Iran</nom>
+   </reponse>
+   <reponse>
+      <nom>La Jordanie</nom>
+   </reponse>
+</question>
 </theme>

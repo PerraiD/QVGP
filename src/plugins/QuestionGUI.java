@@ -1,14 +1,12 @@
 package plugins;
 
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import java.lang.reflect.InvocationTargetException;
-
 import java.net.MalformedURLException;
-
 import java.util.Collections;
 import java.util.List;
 
@@ -32,6 +30,8 @@ public class QuestionGUI extends JPanel implements IGui,ActionListener{
 	IRevelateur revelateur;
 	ICalculPoint points;
 	Plateforme plateformeInstance;
+	List<String> reps;
+	int indexBonneRep;
 	
 	public QuestionGUI (IQuestion question, ICalculPoint points) throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException, MalformedURLException{
 		
@@ -41,12 +41,25 @@ public class QuestionGUI extends JPanel implements IGui,ActionListener{
 		
 		this.points = points;
 		this.question = question.getEnonce();
-		List<String> reps = question.getReponses();
+		reps = question.getReponses();
 		Collections.shuffle(reps);
+		
+		for(int i=0;i<=3;i++)
+		{
+			if(revelateur.estReponseCorrecte(reps.get(i)))
+			{
+				indexBonneRep = i;
+			}
+		}
+		
 		bouton1 = new JRadioButton(reps.get(0));
+		bouton1.setToolTipText(reps.get(0));
 		bouton2 = new JRadioButton(reps.get(1));
+		bouton2.setToolTipText(reps.get(1));
 		bouton3 = new JRadioButton(reps.get(2));
+		bouton3.setToolTipText(reps.get(2));
 		bouton4 = new JRadioButton(reps.get(3));
+		bouton4.setToolTipText(reps.get(3));
 		
 		RepGroup.add(bouton1);
 		RepGroup.add(bouton2);
@@ -55,7 +68,6 @@ public class QuestionGUI extends JPanel implements IGui,ActionListener{
 		
 	}
 	public void paintComponent(Graphics g){
-		bouton1.setSelected(true);
 		int TMAX = question.length();
 		g.drawString("---QUESTION---",120, 20);
 		if (TMAX > 40 && TMAX <90){
@@ -75,27 +87,37 @@ public class QuestionGUI extends JPanel implements IGui,ActionListener{
 			g.drawString(moitquest3,0, 60);
 		}
 		else g.drawString(question,10, 40);
-		
 	}
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
-		// TODO Auto-generated method stub
-		if(arg0.getSource()==bouton1){
-			
-		}
+		
 	} 
 	
 	public void verifierReponse(){
-		verifRepByButton(bouton1);
-		verifRepByButton(bouton2); 
-		verifRepByButton(bouton3); 
-		verifRepByButton(bouton4);
+		verifRepByButton(bouton1,0);
+		verifRepByButton(bouton2,1); 
+		verifRepByButton(bouton3,2); 
+		verifRepByButton(bouton4,3);
+		
 	}
 	
-	public void verifRepByButton(JRadioButton b){
+	public void verifRepByButton(JRadioButton b, int indexButton){
 		if(b.isSelected()){
 			points.isGoodAnswer(revelateur.estReponseCorrecte(b.getText()));
+			if(indexBonneRep!=indexButton)
+			{
+				b.setBackground(Color.red);
+			}
 		}
+		if(indexBonneRep==indexButton){ 
+			b.setBackground(Color.green);
+		}
+		
+	}
+	
+	public boolean asAValidateQuestion()
+	{
+		return (bouton1.isSelected() || bouton2.isSelected() ||bouton3.isSelected() ||bouton4.isSelected());
 	}
 		    
 }               

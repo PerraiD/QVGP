@@ -51,4 +51,123 @@
       <nom>Un cycliste</nom>
    </reponse>
 </question>
+<question>
+   <enonce>
+      <nom>Le logiciel Microsoft Publisher est un logiciel de :</nom>
+   </enonce>
+   <reponse>
+      <nom>PAO (Publication Assistée par Ordinateur)</nom>
+   </reponse>
+   <reponse>
+      <nom>Publication de sites Web</nom>
+   </reponse>
+   <reponse>
+      <nom>Traitement de texte</nom>
+   </reponse>
+   <reponse>
+      <nom>Messagerie instantanée</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Selon la loi de Gordon Moore, le nombre de transistors d'un processeur :</nom>
+   </enonce>
+   <reponse>
+      <nom>Double tout les 18 mois</nom>
+   </reponse>
+   <reponse>
+      <nom>Triple tout les 18 mois</nom>
+   </reponse>
+   <reponse>
+      <nom>Double tout les 12 mois</nom>
+   </reponse>
+   <reponse>
+      <nom>Triple tout les 12 mois</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Qu'est ce qu'un "Spyware" ?</nom>
+   </enonce>
+   <reponse>
+      <nom>Un logiciel pouvant vous espionner</nom>
+   </reponse>
+   <reponse>
+      <nom>Un virus</nom>
+   </reponse>
+   <reponse>
+      <nom>Un logiciel de saisie confidentielle</nom>
+   </reponse>
+   <reponse>
+      <nom>Un programme optimisant votre ordinateur</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Qu'est ce que le xHTML</nom>
+   </enonce>
+   <reponse>
+      <nom>Un langage de conception de pages Web</nom>
+   </reponse>
+   <reponse>
+      <nom>Un logiciel</nom>
+   </reponse>
+   <reponse>
+      <nom>Un graveur protégé contre les pertes du flux de données</nom>
+   </reponse>
+   <reponse>
+      <nom>Un nouveau processeur</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>L'anti Aliasing est une technique :</nom>
+   </enonce>
+   <reponse>
+      <nom>Qui calcule la moyenne des pixels aux alentours pour appliquer une technique de lissage</nom>
+   </reponse>
+   <reponse>
+      <nom>Qui agrandit une image</nom>
+   </reponse>
+   <reponse>
+      <nom>Qui accélère l'affichage d'un jeu</nom>
+   </reponse>
+   <reponse>
+      <nom>Qui nécessite plus de puissance de calcul</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>PHP est un langage exécuté côté :</nom>
+   </enonce>
+   <reponse>
+      <nom>Serveur</nom>
+   </reponse>
+   <reponse>
+      <nom>Client</nom>
+   </reponse>
+   <reponse>
+      <nom>Des deux cotés</nom>
+   </reponse>
+   <reponse>
+      <nom>Heu... C'est quoi PHP ?</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Une adresse IPv4 se code sur :</nom>
+   </enonce>
+   <reponse>
+      <nom>32 bits</nom>
+   </reponse>
+   <reponse>
+      <nom>16 bits</nom>
+   </reponse>
+   <reponse>
+      <nom>4 bits</nom>
+   </reponse>
+   <reponse>
+      <nom>1 octet</nom>
+   </reponse>
+</question>
 </theme>

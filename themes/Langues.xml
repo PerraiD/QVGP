@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme nom="Langues">
+<question>
+   <enonce>
+      <nom>Comment dit-on "Bonsoir" en Italien?</nom>
+   </enonce>
+   <reponse>
+      <nom>Buona sera</nom>
+   </reponse>
+   <reponse>
+      <nom>Buenas noches</nom>
+   </reponse>
+   <reponse>
+      <nom>Boa noite</nom>
+   </reponse>
+   <reponse>
+      <nom>Arrivederci</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Comment dit-on "Je t'aime" en Allemand?</nom>
+   </enonce>
+   <reponse>
+      <nom>Ich liebe Dich</nom>
+   </reponse>
+   <reponse>
+      <nom>Ik hou van jou</nom>
+   </reponse>
+   <reponse>
+      <nom>Jeg elsker dig</nom>
+   </reponse>
+   <reponse>
+      <nom>Te quiero</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Que signifie "Sayônara" en Japonais?</nom>
+   </enonce>
+   <reponse>
+      <nom>Bonjour</nom>
+   </reponse>
+   <reponse>
+      <nom>Félicitations</nom>
+   </reponse>
+   <reponse>
+      <nom>Merci</nom>
+   </reponse>
+   <reponse>
+      <nom>Au revoir</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>En Anglais, traduisez le verbe "To forgive"</nom>
+   </enonce>
+   <reponse>
+      <nom>Pardonner</nom>
+   </reponse>
+   <reponse>
+      <nom>Echérir</nom>
+   </reponse>
+   <reponse>
+      <nom>Interdire</nom>
+   </reponse>
+   <reponse>
+      <nom>Oublier</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>En Espagnol, que signifie "Feliz cumpleaños"?</nom>
+   </enonce>
+   <reponse>
+      <nom>Joyeux anniversaire</nom>
+   </reponse>
+   <reponse>
+      <nom>Bonne année</nom>
+   </reponse>
+   <reponse>
+      <nom>Meilleurs voeux</nom>
+   </reponse>
+   <reponse>
+      <nom>Félicitations</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>"Agua" est la traduction du mot "Eau". Mais en quelle langue?</nom>
+   </enonce>
+   <reponse>
+      <nom>Espagnol</nom>
+   </reponse>
+   <reponse>
+      <nom>Italien</nom>
+   </reponse>
+   <reponse>
+      <nom>Turc</nom>
+   </reponse>
+   <reponse>
+      <nom>Suédois</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Comment dit-on "Oui" en Russe?</nom>
+   </enonce>
+   <reponse>
+      <nom>Da</nom>
+   </reponse>
+   <reponse>
+      <nom>Ya</nom>
+   </reponse>
+   <reponse>
+      <nom>Tak</nom>
+   </reponse>
+   <reponse>
+      <nom>Ayé</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Comment dit-on "Je te remercie" en Néerlandais?</nom>
+   </enonce>
+   <reponse>
+      <nom>Espagnol</nom>
+   </reponse>
+   <reponse>
+      <nom>Hvala ti</nom>
+   </reponse>
+   <reponse>
+      <nom>Danke schön</nom>
+   </reponse>
+   <reponse>
+      <nom>Gràcies</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>En Italien, comment dit-on "Non"?</nom>
+   </enonce>
+   <reponse>
+      <nom>No</nom>
+   </reponse>
+   <reponse>
+      <nom>Nein</nom>
+   </reponse>
+   <reponse>
+      <nom>Nee</nom>
+   </reponse>
+   <reponse>
+      <nom>Neni</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Traduisez le mot "Cuillère" en Anglais.</nom>
+   </enonce>
+   <reponse>
+      <nom>Spoon</nom>
+   </reponse>
+   <reponse>
+      <nom>Fork</nom>
+   </reponse>
+   <reponse>
+      <nom>Stove</nom>
+   </reponse>
+   <reponse>
+      <nom>Pan</nom>
+   </reponse>
+</question>	

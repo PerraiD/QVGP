@@ -19,7 +19,7 @@
 </question>
 <question>
    <enonce>
-      <nom>Où Vénus est-elle née ?</nom>
+      <nom>Où Aphrodite est-elle née ?</nom>
    </enonce>
    <reponse>
       <nom>Sur les flots</nom>
@@ -36,7 +36,7 @@
 </question>
 <question>
    <enonce>
-      <nom>Junon est la déesse ?</nom>
+      <nom>Hera est la déesse ?</nom>
    </enonce>
    <reponse>
       <nom>Du mariage</nom>
@@ -56,16 +56,16 @@
       <nom> Qui est le père de Polyphème le Cyclope ?</nom>
    </enonce>
    <reponse>
-      <nom>Neptune</nom>
+      <nom>Poseidon</nom>
    </reponse>
    <reponse>
-      <nom>Mars</nom>
+      <nom>Ares</nom>
    </reponse>
    <reponse>
-      <nom>Bacchus</nom>
+      <nom>Dionysos</nom>
    </reponse>
    <reponse>
-      <nom>Jupiter</nom>
+      <nom>Zeus</nom>
    </reponse>
 </question>
 <question>
@@ -73,13 +73,13 @@
       <nom>Qui est la sœur jumelle d’Apollon ?</nom>
    </enonce>
    <reponse>
-      <nom>Diane</nom>
+      <nom>Artemis</nom>
    </reponse>
    <reponse>
-      <nom>Junon</nom>
+      <nom>Hera</nom>
    </reponse>
    <reponse>
-      <nom>Proserpine</nom>
+      <nom>Persephone</nom>
    </reponse>
    <reponse>
       <nom>Nala</nom>
@@ -107,13 +107,13 @@
       <nom>Quel dieu a pour attribut le caducée ?</nom>
    </enonce>
    <reponse>
-      <nom>Mercure</nom>
-   </reponse>
-   <reponse>
-      <nom>Mars</nom>
-   </reponse>
-   <reponse>
       <nom>Hermes</nom>
+   </reponse>
+   <reponse>
+      <nom>Ares</nom>
+   </reponse>
+   <reponse>
+      <nom>Hephaistos</nom>
    </reponse>
    <reponse>
       <nom>Poséidon</nom>
@@ -124,10 +124,10 @@
       <nom>Qui était la déesse de la chasse et de la lune ?</nom>
    </enonce>
    <reponse>
-      <nom>Diane</nom>
+      <nom>Artemis</nom>
    </reponse>
    <reponse>
-      <nom>Minerve</nom>
+      <nom>Thetis</nom>
    </reponse>
    <reponse>
       <nom>Céres</nom>
@@ -138,7 +138,7 @@
 </question>
 <question>
    <enonce>
-      <nom>Junon était la femme de Jupiter. Mais elle était aussi : </nom>
+      <nom>Hera était la femme de Zeus. Mais elle était aussi : </nom>
    </enonce>
    <reponse>
       <nom>Sa soeur</nom>
@@ -158,16 +158,16 @@
       <nom>Quel dieu avait à ses côtés le chien Cerbère ?</nom>
    </enonce>
    <reponse>
-      <nom>Pluton</nom>
+      <nom>Hades</nom>
    </reponse>
    <reponse>
-      <nom>Vulcain</nom>
+      <nom>Hephaistos</nom>
    </reponse>
    <reponse>
-      <nom>Mercure</nom>
+      <nom>Hermes</nom>
    </reponse>
    <reponse>
-      <nom>Jupiter</nom>
+      <nom>Zeus</nom>
    </reponse>
 </question>
 </theme>
