@@ -61,6 +61,7 @@ public class Gui extends JFrame  implements IGui, ActionListener{
 	    this.setLocationRelativeTo(null);
 	    //Ajout du bouton à notre content pane
 	
+	    bouton.addActionListener(this);
 	    boutonGo.addActionListener(this);
 	
 	    GridLayout experimentLayout = new GridLayout(0,2);

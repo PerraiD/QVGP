@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme nom="MythologieEgyptienne">
+<question>
+   <enonce>
+      <nom>Quel dieu a une tête de chacal?</nom>
+   </enonce>
+   <reponse>
+      <nom>Anubis</nom>
+   </reponse>
+   <reponse>
+      <nom>Amon</nom>
+   </reponse>
+   <reponse>
+      <nom>Apis</nom>
+   </reponse>
+   <reponse>
+      <nom>Apophis</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Quelle est la déesse de la maison, du chat et de la joie ?</nom>
+   </enonce>
+   <reponse>
+      <nom>Bastet</nom>
+   </reponse>
+   <reponse>
+      <nom>Amset</nom>
+   </reponse>
+   <reponse>
+      <nom>Satet</nom>
+   </reponse>
+   <reponse>
+      <nom>Nephtys</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Quel est le dieu du bien et de l'azur ?</nom>
+   </enonce>
+   <reponse>
+      <nom>Horus</nom>
+   </reponse>
+   <reponse>
+      <nom>Osiris</nom>
+   </reponse>
+   <reponse>
+      <nom>Seth</nom>
+   </reponse>
+   <reponse>
+      <nom>Thouéris</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Quel dieu règne sur le Nil?</nom>
+   </enonce>
+   <reponse>
+      <nom>Sobek</nom>
+   </reponse>
+   <reponse>
+      <nom>Hapy</nom>
+   </reponse>
+   <reponse>
+      <nom>Thôt</nom>
+   </reponse>
+   <reponse>
+      <nom>Anubis</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Quel est le dieu serpent symbolisant le mal ?</nom>
+   </enonce>
+   <reponse>
+      <nom>Apopis</nom>
+   </reponse>
+   <reponse>
+      <nom>Anubis</nom>
+   </reponse>
+   <reponse>
+      <nom>Seth</nom>
+   </reponse>
+   <reponse>
+      <nom>Osiris</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Quel est le dieu de la connaissance, de la culture, de la parole, des mathématiques et de l’écriture ?</nom>
+   </enonce>
+   <reponse>
+      <nom>Thôt</nom>
+   </reponse>
+   <reponse>
+      <nom>Ptah</nom>
+   </reponse>
+   <reponse>
+      <nom>Bes</nom>
+   </reponse>
+   <reponse>
+      <nom>Râ</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Quel est le dieu soleil ?</nom>
+   </enonce>
+   <reponse>
+      <nom>Les deux</nom>
+   </reponse>
+   <reponse>
+      <nom>Râ</nom>
+   </reponse>
+   <reponse>
+      <nom>Ré</nom>
+   </reponse>
+   <reponse>
+      <nom>Aucun</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Quel est le lien de parenté entre Osiris et Isis ?</nom>
+   </enonce>
+   <reponse>
+      <nom>Mari et femme</nom>
+   </reponse>
+   <reponse>
+      <nom>Frère et soeur</nom>
+   </reponse>
+   <reponse>
+      <nom>Cousins</nom>
+   </reponse>
+   <reponse>
+      <nom>Oncle et nièce</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Quel dieu est l'incarnation du mal?</nom>
+   </enonce>
+   <reponse>
+      <nom>Seth</nom>
+   </reponse>
+   <reponse>
+      <nom>Anubis</nom>
+   </reponse>
+   <reponse>
+      <nom>Sobek</nom>
+   </reponse>
+   <reponse>
+      <nom>Thôt</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Quelle déesse fait regner la justice ?</nom>
+   </enonce>
+   <reponse>
+      <nom>Maât</nom>
+   </reponse>
+   <reponse>
+      <nom>Thoueris</nom>
+   </reponse>
+   <reponse>
+      <nom>Nephtys</nom>
+   </reponse>
+   <reponse>
+      <nom>Isis</nom>
+   </reponse>
+</question>
+</theme>

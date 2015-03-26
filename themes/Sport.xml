@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme nom="Sport">
+<question>
+   <enonce>
+      <nom>Quelle est la distance officielle d'un marathon?</nom>
+   </enonce>
+   <reponse>
+      <nom>42,195 kilomètres</nom>
+   </reponse>
+   <reponse>
+      <nom>40,625 kilomètres</nom>
+   </reponse>
+   <reponse>
+      <nom>36,870 kilomètres</nom>
+   </reponse>
+   <reponse>
+      <nom>45,610 kilomètres</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Comment s'appelle le championnat nord-américain de basket ball?</nom>
+   </enonce>
+   <reponse>
+      <nom>La NBA</nom>
+   </reponse>
+   <reponse>
+      <nom>La LNB</nom>
+   </reponse>
+   <reponse>
+      <nom>La LFB</nom>
+   </reponse>
+   <reponse>
+      <nom>La FIBA</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>En combien de points se joue un set de tennis de table de nos jours?</nom>
+   </enonce>
+   <reponse>
+      <nom>11</nom>
+   </reponse>
+   <reponse>
+      <nom>15</nom>
+   </reponse>
+   <reponse>
+      <nom>21</nom>
+   </reponse>
+   <reponse>
+      <nom>24</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Au début d'un match de handball, combien de joueurs doivent se trouver sur le terrain?</nom>
+   </enonce>
+   <reponse>
+      <nom>14</nom>
+   </reponse>
+   <reponse>
+      <nom>12</nom>
+   </reponse>
+   <reponse>
+      <nom>16</nom>
+   </reponse>
+   <reponse>
+      <nom>18</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>En athlétisme, laquelle de ces épreuves n'existe pas?</nom>
+   </enonce>
+   <reponse>
+      <nom>Le lancer de perches</nom>
+   </reponse>
+   <reponse>
+      <nom>Le lancer de poids</nom>
+   </reponse>
+   <reponse>
+      <nom> Le lancer de marteaux</nom>
+   </reponse>
+   <reponse>
+      <nom> Le lancer de marteaux</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Quel nageur est le seul athlète à avoir remporté 7 médailles d'or lors des mêmes Jeux Olympiques?</nom>
+   </enonce>
+   <reponse>
+      <nom>Mark Spitz</nom>
+   </reponse>
+   <reponse>
+      <nom>Frank Esposito</nom>
+   </reponse>
+   <reponse>
+      <nom>Ian Thorpe</nom>
+   </reponse>
+   <reponse>
+      <nom>Johny Weissmuller</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom> En rugby, combien de points rapporte un essai non transformé?</nom>
+   </enonce>
+   <reponse>
+      <nom>5</nom>
+   </reponse>
+   <reponse>
+      <nom>2</nom>
+   </reponse>
+   <reponse>
+      <nom>3</nom>
+   </reponse>
+   <reponse>
+      <nom>7</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>En gymnastique, comment appelle-t-on le tapis utilisé pour le sol?</nom>
+   </enonce>
+   <reponse>
+      <nom>Le praticable</nom>
+   </reponse>
+   <reponse>
+      <nom>Le tatami</nom>
+   </reponse>
+   <reponse>
+      <nom>L'estacade</nom>
+   </reponse>
+   <reponse>
+      <nom>L'asphalte</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Quel surfer possède le plus grand nombre de couronnes mondiales?</nom>
+   </enonce>
+   <reponse>
+      <nom>Kelly Slater</nom>
+   </reponse>
+   <reponse>
+      <nom>Laird Hamilton</nom>
+   </reponse>
+   <reponse>
+      <nom>Mark Occhilupo</nom>
+   </reponse>
+   <reponse>
+      <nom>Andy irons</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>En tennis, lequel de ces joueurs n'a jamais remporté Roland Garros</nom>
+   </enonce>
+   <reponse>
+      <nom>Pete Sampras</nom>
+   </reponse>
+   <reponse>
+      <nom>Thomas Muster</nom>
+   </reponse>
+   <reponse>
+      <nom>Carlos Moya</nom>
+   </reponse>
+   <reponse>
+      <nom>Ievgueni Kafelnikov</nom>
+   </reponse>
+</question>
+</theme>

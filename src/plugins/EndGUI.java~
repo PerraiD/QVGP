@@ -26,7 +26,7 @@ public class EndGUI extends JFrame implements IGui,ActionListener{
 	    this.setLocationRelativeTo(null);
 	    
 	    JPanel Menu = new JPanel();
-	    Menu.setLayout(new BoxLayout(Menu, BoxLayout.LINE_AXIS));
+	    Menu.setLayout(new BoxLayout(Menu, BoxLayout.PAGE_AXIS));
 	    points.setText("Vous avez totalisé : "+userScore+" points");
 	    Menu.add(points);
 	    Menu.setMaximumSize(Menu.getPreferredSize());
