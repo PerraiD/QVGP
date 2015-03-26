@@ -1,7 +1,6 @@
 package plugins;
 
 
-import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,7 +10,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -92,8 +90,6 @@ public class Gui extends JFrame  implements IGui, ActionListener{
 	    //On positionne maintenant ces trois lignes en colonne
 	    b6.setLayout(new BoxLayout(b6, BoxLayout.PAGE_AXIS));
 	   
-	    
-	    b6.add(Menu);
 	    b6.add(Points);
 	    b6.add(Question);
 	    b6.add(Reponses);

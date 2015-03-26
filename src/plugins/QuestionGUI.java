@@ -18,7 +18,6 @@ import javax.swing.JRadioButton;
 
 import Core.Plateforme;
 import Interfaces.*;
-//import sun.security.util.Length;
 
 public class QuestionGUI extends JPanel implements IGui,ActionListener{
 	String question = "";
@@ -58,7 +57,6 @@ public class QuestionGUI extends JPanel implements IGui,ActionListener{
 	public void paintComponent(Graphics g){
 		bouton1.setSelected(true);
 		int TMAX = question.length();
-		System.out.println("taille question="+TMAX);
 		g.drawString("---QUESTION---",120, 20);
 		if (TMAX > 40 && TMAX <90){
 			
