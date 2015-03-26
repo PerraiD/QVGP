@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme nom="SeriesTv">
+<question>
+   <enonce>
+      <nom>Dans la série Friends, lesquels de ces personnages ont un lien de parenté ?</nom>
+   </enonce>
+   <reponse>
+      <nom>Monica et Ross</nom>
+   </reponse>
+   <reponse>
+      <nom>Phoebe et Joey</nom>
+   </reponse>
+   <reponse>
+      <nom>Rachel et Chandler</nom>
+   </reponse>
+   <reponse>
+      <nom>Rachel et Monica</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Dans quelle ville se déroule la série Urgences ?</nom>
+   </enonce>
+   <reponse>
+      <nom>Chicago</nom>
+   </reponse>
+   <reponse>
+      <nom>New-York</nom>
+   </reponse>
+   <reponse>
+      <nom>Los Angeles</nom>
+   </reponse>
+   <reponse>
+      <nom>Atlanta</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Dans la série Game of Thrones, quelle est la devise (en VO) de la famille Stark ?</nom>
+   </enonce>
+   <reponse>
+      <nom>Winter is comming</nom>
+   </reponse>
+   <reponse>
+      <nom>Hear me roar</nom>
+   </reponse>
+   <reponse>
+      <nom>Ours is the fury</nom>
+   </reponse>
+   <reponse>
+      <nom>We Do Not Sow</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Quel est le prénom du bébé de la famille Simpson ?</nom>
+   </enonce>
+   <reponse>
+      <nom>Maggie</nom>
+   </reponse>
+   <reponse>
+      <nom>Lisa</nom>
+   </reponse>
+   <reponse>
+      <nom>Patty</nom>
+   </reponse>
+   <reponse>
+      <nom>Bart</nom>
+   </reponse>
+</question>
+<question>
+   <enonce>
+      <nom>Qui incarne Elena Gilbert dans la série Vampire Diaries ?</nom>
+   </enonce>
+   <reponse>
+      <nom>Nina Dobrev</nom>
+   </reponse>
+   <reponse>
+      <nom>Crystal Reed</nom>
+   </reponse>
+   <reponse>
+      <nom>Sara Canning</nom>
+   </reponse>
+   <reponse>
+      <nom>Anna Paquin</nom>
+   </reponse>
+</question>
+</theme>

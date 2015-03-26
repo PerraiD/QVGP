@@ -36,7 +36,8 @@ public class ProducteurDeQuestion implements IProducteurDeQuestion {
 		QuestionParser qp=new QuestionParser(System.getProperty("user.dir")+"/themes/"+theme+".xml");
 		int nbquest=qp.getNbquestion();
 		List<Integer> numeros = new ArrayList<Integer>();
-		do{ Question q=qp.chercheQuestion();
+		do{
+			Question q=qp.chercheQuestion();
 			if(!numeros.contains(q.getNumero())){ 
 				numeros.add(q.getNumero());
 				listeDesQuestions.add(q);

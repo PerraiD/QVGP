@@ -23,7 +23,7 @@ public class BeginGUI extends JFrame implements IGui,ActionListener{
 	protected JPanel finalPanel;
 	protected IGui nextUi;
 			
- public BeginGUI() throws FileNotFoundException, ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException, IOException{
+	public BeginGUI() throws FileNotFoundException, ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException, IOException{
 	 
 	    this.setTitle("Qui Veut Gagner Des Plugins");
 	    this.setSize(250, 100);
@@ -49,28 +49,30 @@ public class BeginGUI extends JFrame implements IGui,ActionListener{
 	    this.getContentPane().add(this.finalPanel);
 	    this.setVisible(true);
 	    
- }  
-	    public void actionPerformed(ActionEvent arg0) {
-	  	  if(arg0.getSource() == bouton){  
-	  		  			try {
-						nextUi =  (IGui) Plateforme.getInstance().loadPluginDependencyFrom(this.getClass(),"IGui");
-					
-						} catch (ClassNotFoundException
-								| InstantiationException
-								| IllegalAccessException
-								| SecurityException
-								| IllegalArgumentException
-								| IOException e) {
-							// TODO Auto-generated catch block
-							e.printStackTrace();
-						}
-						nextUi.setVisible(true);		
+	}  
+ 
+	public void actionPerformed(ActionEvent arg0) {
+		if(arg0.getSource() == bouton){  
+			try{
 				
-			
-			  this.setVisible(false);
-	  		  }
-	  		  
-	  }
+				nextUi =  (IGui) Plateforme.getInstance().loadPluginDependencyFrom(this.getClass(),"IGui");
+				
+			} catch (ClassNotFoundException
+							| InstantiationException
+							| IllegalAccessException
+							| SecurityException
+							| IllegalArgumentException
+							| IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+			}
+			nextUi.setVisible(true);		
+			this.setVisible(false);
+		}else if(arg0.getSource() == bouton2){
+			System.exit(EXIT_ON_CLOSE);
+		}
+		  		  
+	}
 	  	 
 	  	 
 }

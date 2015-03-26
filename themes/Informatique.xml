@@ -19,10 +19,10 @@
 </question>
 <question>
    <enonce>
-      <nom>Combien d'octet sont compris dans un TeraOctet ?</nom>
+      <nom>Combien d'octet sont compris dans un MegaOctet ?</nom>
    </enonce>
    <reponse>
-      <nom>10000</nom>
+      <nom>1000000</nom>
    </reponse>
    <reponse>
       <nom>1024</nom>

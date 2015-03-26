@@ -35,7 +35,7 @@ public class QuestionGUI extends JPanel implements IGui,ActionListener{
 	Plateforme plateformeInstance;
 	
 	public QuestionGUI (IQuestion question, ICalculPoint points) throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException, MalformedURLException{
-		//revelateur = new Revelateur(question);
+		
 		plateformeInstance = Plateforme.getInstance();
 		Object[] q = {question};
 		revelateur = (IRevelateur) plateformeInstance.loadPluginDependencyWithParamsFrom(this.getClass(),"IRevelateur",q,IQuestion.class); 
@@ -58,16 +58,16 @@ public class QuestionGUI extends JPanel implements IGui,ActionListener{
 	public void paintComponent(Graphics g){
 		bouton1.setSelected(true);
 		int TMAX = question.length();
-		
-		g.drawString("question",120, 20);
-		if (TMAX > 40 && TMAX <80){
+		System.out.println("taille question="+TMAX);
+		g.drawString("---QUESTION---",120, 20);
+		if (TMAX > 40 && TMAX <90){
 			
-		moitquest1= question.substring(0,40);
+		moitquest1= question.substring(0,41);
 		moitquest2= question.substring(41,TMAX);
 		g.drawString(moitquest1,10, 40);
 		g.drawString(moitquest2,0, 50);
 		}
-		else if (TMAX > 80){
+		else if (TMAX > 90){
 			
 			moitquest1= question.substring(0,45);
 			moitquest2= question.substring(45,85);
@@ -76,7 +76,7 @@ public class QuestionGUI extends JPanel implements IGui,ActionListener{
 			g.drawString(moitquest2,0, 50);
 			g.drawString(moitquest3,0, 60);
 		}
-		else g.drawString(question,0, 40);
+		else g.drawString(question,10, 40);
 		
 	}
 	@Override

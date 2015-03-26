@@ -1,0 +1,5 @@
+type=ui
+pluginName=endGui
+pluginClass=EndGUI
+firstLoad=no
+dependencies=OptionGui
