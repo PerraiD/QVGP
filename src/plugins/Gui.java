@@ -49,7 +49,7 @@ public class Gui extends JFrame  implements IGui, ActionListener{
 		
 		plateformeInstance = Plateforme.getInstance();
 		prod_question = (IProducteurDeQuestion) plateformeInstance.loadPluginDependencyFrom(this.getClass(), "IProducteurDeQuestion");
-	    
+		System.out.println(prod_question == null);
 		questions=  prod_question.recupererQuestions(themeChoisi);
 		
 		calcPts= (ICalculPoint) plateformeInstance.loadPluginDependencyFrom(this.getClass(), "ICalculPoint");
@@ -128,8 +128,9 @@ public class Gui extends JFrame  implements IGui, ActionListener{
 	    	}
 	    	
 	    	if(indiceQC < questions.size()){
-	    		Object[] question = {questions.get(indiceQC),calcPts};
+	    		
 	    		try {
+	    			Object[] question = {questions.get(indiceQC),calcPts};
 	    			qGui = (QuestionGUI) plateformeInstance.loadPluginDependencyWithParamsFrom(this.getClass(),"IGui",question,IQuestion.class,ICalculPoint.class);
 	    		} catch (ClassNotFoundException | InstantiationException
 	    				| IllegalAccessException | NoSuchMethodException
@@ -150,8 +151,8 @@ public class Gui extends JFrame  implements IGui, ActionListener{
 		    		e.printStackTrace();
 		    	}
 	    		//Fin de partie
-	    		EndGUI eGui=new EndGUI(calcPts.getScore());
-	    		/*
+	    		//EndGUI eGui=new EndGUI(calcPts.getScore());
+	    		
 	    		Object[] pts = {calcPts.getScore()};
 	    		try {
 					EndGUI eGui = (EndGUI) plateformeInstance.loadPluginDependencyWithParamsFrom(this.getClass(),"IGui",pts,int.class);
@@ -161,7 +162,7 @@ public class Gui extends JFrame  implements IGui, ActionListener{
 						| InvocationTargetException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
-				}*/
+				}
 	    		this.dispose();
 	    	}
 	    }

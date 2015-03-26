@@ -161,14 +161,14 @@ public Object loadPluginDependencyFrom(Class<?> targetClass, String pluginInterf
 	
 	Object plugToLoad=null;
 	MetaPlugin tmpPlug = this.getPluginFromClassName(targetClass.getName());
-	
-	
+	System.out.println(tmpPlug.getName());
+	System.out.println(tmpPlug.getDependencies().size());
 	for(String dep : tmpPlug.getDependencies()){
 		
 		Class<?> pluginClass = urlC.loadClass("plugins."+dep);
-
+		
+	
 		if(interfClass.isAssignableFrom(pluginClass)){
-			
 			plugToLoad = pluginClass.newInstance();  
 	   }
 		
@@ -185,19 +185,37 @@ public Object loadPluginDependencyWithParamsFrom(Class<?> targetClass,String plu
 	Object plugToLoad=null;
 	MetaPlugin tmpPlug = this.getPluginFromClassName(targetClass.getName());
 
-	System.out.println(tmpPlug.getDependencies().get(0));
+	System.out.println(" plugin Name : "+tmpPlug.getName());
 	
 	for(String dep : tmpPlug.getDependencies()){
-		
+
 		Class<?> pluginClass = urlC.loadClass("plugins."+dep);
 
 		if(interfClass.isAssignableFrom(pluginClass)){
-			Constructor<?> pluginConstr = pluginClass.getConstructor(param);
-			
-			plugToLoad = pluginConstr.newInstance(values);  
-	   }
-		
-	}
+			//matching sur le constructeur pour s'assurer que l'on sélectionne la bonne classe
+			Constructor<?> plugConstructors[] =  pluginClass.getConstructors();
+			boolean diff = false;
+
+			for(Constructor<?> constructeur : plugConstructors){
+
+				if(constructeur.getParameterTypes().length == param.length){
+
+					for(int i=0; i<constructeur.getParameterTypes().length; i++){
+
+						if(constructeur.getParameterTypes()[i] != param[i]){
+							diff = true;
+						}
+					}
+					if(!diff){
+						plugToLoad = constructeur.newInstance(values);  
+					}
+				}
+
+				//Constructor<?> pluginConstr = pluginClass.getConstructor(param);
+
+			}
+		}
+	}	
 	
 	return plugToLoad;
 	
@@ -250,10 +268,9 @@ public MetaPlugin getPluginFromName(String name){
 public MetaPlugin getPluginFromClassName(String className){
 	
 	MetaPlugin mPlug= new MetaPlugin();
-	 
+
 	// présence en préfix du package de la classe on récupère juste le nom de la classe
 	if(className.contains(".")){
-		System.out.println(className);
 		String[] tmpS = className.split("\\.");
 		className= tmpS[1];
 	}
@@ -265,7 +282,6 @@ public MetaPlugin getPluginFromClassName(String className){
 		}
 		
 	}
-
 	return mPlug;
 	
 }

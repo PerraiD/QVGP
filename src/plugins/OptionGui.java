@@ -84,9 +84,10 @@ public class OptionGui extends JFrame implements IGui,ActionListener{
 	public void actionPerformed(ActionEvent arg0) {
 		if(arg0.getSource() == boutonGo){
 			// LOAD CHARGEUR PLUGIN AVEC VARIABLE INSTANCE A LA FIN DU CHARGEMENT
-			String res = String.valueOf(theme.getSelectedItem());
+			
 			
 			try {
+				String res = String.valueOf(theme.getSelectedItem());
 				Object[] values = {res};
 				gui= (IGui)Plateforme.getInstance().loadPluginDependencyWithParamsFrom(this.getClass(),"IGui",values, String.class);
 					
